@@ -9,15 +9,14 @@ const generateCompChoice=()=>{
     const ind=Math.floor(Math.random()*3);
     return choices[ind];
 }
+
 const showResult=(userWin,userChoice,compChoice)=>{
     if(userWin===true){
-        console.log("You win!");
         msg.textContent=`You Win! Your ${userChoice} beats ${compChoice}`;
         msg.style.backgroundColor="green";
         userScore+=1
         document.querySelector("#user").textContent=userScore
     }else{
-        console.log("You Loose!");
         msg.textContent=`You Loose! ${compChoice} beats your ${userChoice}`;
         msg.style.backgroundColor="red";
         compScore+=1
@@ -28,7 +27,6 @@ const playGame=(userChoice)=>{
     const compChoice=generateCompChoice();
     console.log(userChoice,compChoice);
     if(userChoice===compChoice){
-        console.log("match was draw");
         msg.textContent="Match was draw! Play again";
         msg.style.backgroundColor="rgb(8, 8, 74)"
     }else{
