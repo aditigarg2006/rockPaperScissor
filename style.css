@@ -34,7 +34,7 @@ img{
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .score-bord{
@@ -50,7 +50,7 @@ img{
     font-size: 4rem;
 }
 .msg-container{
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 .msg{
     background-color: rgb(8, 8, 74);
